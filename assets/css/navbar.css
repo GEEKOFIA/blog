@@ -104,13 +104,8 @@ li {
     }
 
     .bd-navbar {
-        position: unset;
+        position: relative;
     }
-
-    .bd-navbar {
-        position: unset;
-    }
-
 }
 
 @media (min-width: 517px) and (max-width: 762px) {
