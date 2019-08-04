@@ -26,7 +26,7 @@ sudo mkdir -p /usr/local/lib/nodejs
 sudo tar -xJvf node-v12.7.0-linux-x64.tar.xz -C /usr/local/lib/nodejs
 ```
 #### Set Env. Variable
-Set the environment variable in `~/.profile` by adding below lines to the end of the file.
+Set the environment variable in `~/.bashrc` by adding below lines to the end of the file.
 
 ```bash
 # Node JS
@@ -34,7 +34,11 @@ VERSION=v12.7.0
 DISTRO=linux-x64
 export PATH="/usr/local/lib/nodejs/node-$VERSION-$DISTRO/bin:$PATH"
 ```
-Now refresh the profile to reload the changes
+Now refresh the `~/.bashrc` to reload the changes:
+
+```bash
+source ~/.bashrc
+```
 
 #### Test Installation
 
