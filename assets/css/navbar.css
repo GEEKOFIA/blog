@@ -108,6 +108,11 @@ li {
     #search-input {
         max-width: calc(100% - 39px);
     }
+
+    .bd-navbar {
+        position: unset;
+    }
+
 }
 
 @media (min-width: 762px) and (max-width: 795px) {
