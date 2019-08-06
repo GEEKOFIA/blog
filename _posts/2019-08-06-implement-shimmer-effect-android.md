@@ -3,7 +3,7 @@ title: "How I Implemented Shimmer Effect in Android"
 author: chankruze
 date: 2019-08-04 09:28:49 +05:30
 categories: [Programming, Android, HowTo]
-thumbnail: https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg
+thumbnail: /assets/images/thumbnails/shimmer-thumb.png
 desc: "How i implemented shimmer effect in android"
 ---
 Whenever i open my jio app, google news and others i see this animation before loading data, finally i sit down to implement this cool animation to Geekofia Blog (under dev.) app and also excited to share this experience, btw it was fun !
