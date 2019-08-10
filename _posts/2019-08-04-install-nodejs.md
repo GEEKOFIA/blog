@@ -7,7 +7,7 @@ thumbnail: /assets/images/thumbnails/nodejs-logo.png
 desc: "How to install nodejs latest version properly on linux"
 ---
 {: .align-center}
-![featured-image](http://pluspng.com/img-png/nodejs-logo-png-node-js-development-296.png)
+![featured-image](/assets/images/thumbnails/nodejs-logo.png)
 
 Some times when you install Node JS through package manager, it fetches LTS version which is the stable one but old. The worst nightmare is npm installation, It will install older version which causes many errors for most of the projects bacause most projects use latest version. So to avoid fucking things happening, you should install nodejs manually by downloading linux binary archive.
 
