@@ -3,7 +3,7 @@ title: "Install Latest Node JS on Linux Properly"
 author: chankruze
 date: 2019-08-04 09:28:49 +05:30
 categories: [HowTo]
-thumbnail: http://pluspng.com/img-png/nodejs-logo-png-node-js-development-296.png
+thumbnail: /assets/images/thumbnails/nodejs-logo.png
 desc: "How to install nodejs latest version properly on linux"
 ---
 {: .align-center}
