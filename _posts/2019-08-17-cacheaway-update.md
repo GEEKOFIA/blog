@@ -3,7 +3,7 @@ title: "CacheAway App v2.1.0 Coming Soon"
 author: chankruze
 date: 2019-08-17 18:28:58 +05:30
 categories: [Android]
-thumbnail: /assets/images/thumbnails/shimmer-thumb.png
+thumbnail: https://res.cloudinary.com/chankruze/image/upload/v1566047802/blog/CacheAway_v2.1.0.png
 desc: "CacheAway[ROOT] app will receive an update to v2.1.0"
 ---
 {: .align-center}
