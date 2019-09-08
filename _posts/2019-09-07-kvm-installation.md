@@ -10,7 +10,7 @@ Yesterday i was re installing android studio due to a drive corruption on my new
 
 I followed [this](https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux) post of android developers but it showed some packages were missing and errors occured.
 
-**Requirements**
+#### Requirements
 
 If you are sure your device is capable then no need to read this section. For those who wondering how they know if their device is capable or not can continue.
 
@@ -18,7 +18,7 @@ To use VM acceleration on Linux, your computer must also meet these requirements
 - Intel processors: Support for Virtualization Technology (VT-x), Intel EM64T (Intel 64) features, and Execute Disable (XD) Bit functionality enabled.
 - AMD processors: Support for AMD Virtualization (AMD-V).
 
-**Check that your CPU supports hardware virtualization**
+#### Check CPU for HW Virtualization Support
 
 ```bash
 egrep -c '(vmx|svm)' /proc/cpuinfo
@@ -37,7 +37,7 @@ INFO: /dev/kvm exists
 KVM acceleration can be used
 ```
 
-**Install KVM**
+#### Install KVM
 
 Here the android developers blog was a little bit outdated. There instructions were for ubuntu version lower then 18.10 in which some of the packages were removed & renamed.
 
@@ -74,7 +74,7 @@ sudo apt install virt-manager
 
 ![screenshot-01](https://res.cloudinary.com/chankruze/image/upload/v1567939535/blog/kvm/Screenshot_from_2019-09-07_23-33-38.png)
 
-**Add Users to KVM Groups**
+#### Add Users to KVM Groups
 
 _Note:_ For 9.10 and later but not for 18.10 and 14.04 LTS instead of `libvirt` use `libvirtd`.
 
@@ -83,7 +83,7 @@ sudo adduser `id -un` kvm
 sudo adduser `id -un` libvirt
 ```
 
-**Verify Installation**
+#### Verify Installation
 
 To verify the installation use below commands (should output as shown):
 
@@ -95,7 +95,7 @@ $ virsh list --all
 $
 ```
 
-**Change Ownership**
+#### Change Ownership
 
 Now if you open `virt-manager` you should see an error. To fix this i changed my device's group to `kvm/libvirt` (note that i am using Ubuntu 19.04, use `libvirt` or `libvirtd` as i mentioned the case above).
 
@@ -103,7 +103,7 @@ Now if you open `virt-manager` you should see an error. To fix this i changed my
 sudo chown root:libvirt /dev/kvm
 ```
 
-**Restart Kernel Modules**
+#### Restart Kernel Modules
 
 You can also signout or reboot but i prefered to restart modules:
 
