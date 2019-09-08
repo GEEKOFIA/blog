@@ -20,7 +20,7 @@ To use VM acceleration on Linux, your computer must also meet these requirements
 
 **Check that your CPU supports hardware virtualization**
 
-```
+```bash
 egrep -c '(vmx|svm)' /proc/cpuinfo
 sudo apt-get install cpu-checker
 kvm-ok
@@ -28,7 +28,7 @@ kvm-ok
 
 The output should look like below snippet:
 
-```
+```bash
 $ egrep -c '(vmx|svm)' /proc/cpuinfo
 12
 $ sudo apt-get install cpu-checker
@@ -42,19 +42,20 @@ KVM acceleration can be used
 Here the android developers blog was a little bit outdated. There instructions were for ubuntu version lower then 18.10 in which some of the packages were removed & renamed.
 
 For 18.10 or later:
-```
+
+```bash
 sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 ```
 
 For 10.04 or later:
 
-```
+```bash
 sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
 ```
 
 For 9.10 or earlier:
 
-```
+```bash
 sudo aptitude install kvm libvirt-bin ubuntu-vm-builder bridge-utils
 ```
 
@@ -67,7 +68,7 @@ What are these packages for ?
 
 For GUI i installed `virt-manager` using below command. Which looks like the screenshot attached below.
 
-```
+```bash
 sudo apt install virt-manager
 ```
 
@@ -77,7 +78,7 @@ sudo apt install virt-manager
 
 _Note:_ For 9.10 and later but not for 18.10 and 14.04 LTS instead of `libvirt` use `libvirtd`.
 
-```
+```bash
 sudo adduser `id -un` kvm
 sudo adduser `id -un` libvirt
 ```
@@ -86,7 +87,7 @@ sudo adduser `id -un` libvirt
 
 To verify the installation use below commands (should output as shown):
 
-```
+```bash
 $ virsh list --all
  Id   Name   State
 --------------------
@@ -105,13 +106,12 @@ sudo chown root:libvirt /dev/kvm
 **Restart Kernel Modules**
 
 You can also signout or reboot but i prefered to restart modules:
-```
+
+```bash
 rmmod kvm
 modprobe -a kvm
 ```
 
 Now the installation is complete and you should be able to open virt-manager (if installed) without any errors.
-
-![screenshot-02](https://res.cloudinary.com/chankruze/image/upload/v1567939534/blog/kvm/Screenshot_from_2019-09-07_23-35-10.png)
 
 Thanks for reading the post ! See you in future posts ...
