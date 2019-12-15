@@ -273,7 +273,7 @@ chankruze@geekofia:/run/user/1000/gvfs/mtp:host=Realme_SDM710-MTP__SN%3AB5CA41D6
 ```
 An example of the first ever Juice Jacking box in action.
 
-{% include youtube_video.html src="https://www.youtube.com/watch?v=SgWURvn_q-U" %}
+{% include youtube_video.html src="https://www.youtube.com/embed/SgWURvn_q-U" %}
 
 This specific box looks like a simple Power Charging Kiosk for mobile devices, however, when a device is plugged in, it detects if it can connect to its data and then changes the screen to the a warning message.
 
