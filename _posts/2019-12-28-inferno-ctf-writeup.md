@@ -104,7 +104,7 @@ Flag: infernoCTF{g0_Pr0gRaMM1ng_1s_Gr3At!!}
 #### Check Again
 This pissed off a lot !
 
-The hint `Dante Nero Sparda are the true demons.` was awesome ! `DNSremon` ~ `dnsrecon`.
+The hint `[D]ante [N]ero [S]parda a[re] the true de[mon]s.` was awesome ! Here i get `DNSremon` which is close enough to `dnsrecon`.
 
 ```bash
 $ dnsrecon -d infernoctf.live
