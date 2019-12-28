@@ -146,6 +146,10 @@ It was exploiting null byte poisoning to bypass egrep which was the second check
 
 The request URL was:`http://104.197.168.32:17011/?..magic..=A%00$dark$`
 
+```text
+Flag: infernoCTF{1_gu3ss_y0ur_m4g1c_was_w4y_t00_d4rk}
+```
+
 **UPDATE**
 
 #### Dank PHP
